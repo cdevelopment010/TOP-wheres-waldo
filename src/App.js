@@ -1,4 +1,5 @@
 import Home from "./Components/Home";
+import Firebase from './Components/Firebase';
 
 function App() {
   return (
