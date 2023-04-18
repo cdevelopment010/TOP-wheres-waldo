@@ -1,0 +1,52 @@
+.hidden {
+    display: none; 
+}
+
+.popup {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    background: white; 
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.4);
+}
+
+.popup ul {
+    margin: 0.25rem; 
+    padding: 0.25rem; 
+}
+
+.popup li {
+    list-style: none;
+    margin-top: 0.25rem; 
+}
+.popup li:not(.found) {
+    cursor: pointer;
+}
+
+.found {
+    text-decoration: line-through;
+    color: gray; 
+}
+
+.popup li:hover:not(.found) {
+    background: rgba(213, 213, 58, 0.4)
+}
+
+
+.img-container {
+    position: relative; 
+}
+
+.found-img {
+    position: relative; 
+}
+
+.found-img::after {
+    content: '';
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 100%;
+    background: rgba(0,0,0,0.8) 
+}
